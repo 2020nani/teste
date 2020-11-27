@@ -2,7 +2,7 @@ import { get } from 'axios';
 
 //funcao busca dados na api e retorna array de veiculos
 
-export function Veiculos ( ){
+export function MarcasVeiculos ( ){
 
     return get( `https://parallelum.com.br/fipe/api/v1/carros/marcas` ).then( result => result.data )
 }
@@ -11,7 +11,7 @@ export function Veiculos ( ){
 modelos de veiculos conforme id passado como parametro
 na funcao */
 
-export function Modelos (id){
+export function ModelosVeiculos (id){
   
    return get( `https://parallelum.com.br/fipe/api/v1/carros/marcas/${id}/modelos` ).then( result => result.data )
 
