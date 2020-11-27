@@ -1,7 +1,6 @@
 import { get } from 'axios';
 
 //funcao busca dados na api e retorna array de veiculos
-
 export function MarcasVeiculos ( ){
 
     return get( `https://parallelum.com.br/fipe/api/v1/carros/marcas` ).then( result => result.data )
