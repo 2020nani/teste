@@ -68,7 +68,7 @@ export default function MarcaVeiculos() {
                     <tr>
                         <td>
                             <p>{marcas.nome}</p>
-                            <button type="button" onClick={() => idVeiculo(marcas.codigo, marcas.nome)}><p>Ver modelos</p></button>
+                            <button type="button"  onClick={() => idVeiculo(marcas.codigo, marcas.nome)}><p>Ver modelos</p></button>
                         </td>
                         
                     </tr>
@@ -78,15 +78,15 @@ export default function MarcaVeiculos() {
             : 
             
                <table>
-                <th>Marcas 
+                <th><p>Marca</p></th>
                     <tr>
                         <td>
-                            {veiculomarca}
-                            <button type="button" onClick={() => idVeiculo()}>Ver modelos</button>
+                            <p>{veiculomarca}</p>
+                            <button type="button"  onClick={() => idVeiculo()}><p>Ver marcas</p></button>
 
                         </td>
                     </tr>
-                </th>
+                
             </table> 
             }
             </Container>

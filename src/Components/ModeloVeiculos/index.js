@@ -32,11 +32,11 @@ export default function ModeloVeiculos( props ) {
     {id === true ? 
     <Container>
     <HeaderTabela>
-        <h1>Marcas</h1>
+        <h1>Modelos</h1>
     </HeaderTabela>
     
     <table>
-        <th><p>Marca</p></th>
+        <th><p>Modelo</p></th>
         {modelo.map(modelos =>(
             <tr>
                 <td>
