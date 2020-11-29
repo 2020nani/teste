@@ -10,9 +10,5 @@ color : #5A5C69;
 font-size: 1.5em
 
 }
-@media(min-width: 700px) {
-  width: 100vw
-  margin-left: 0;
-  font-size: 10px;
-}
+
 `

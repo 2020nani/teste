@@ -4,13 +4,17 @@ export const Container = styled.div `
 width:100vw;
 background-color: #F7F8FB;
 
-@media(min-width: 700px) {
-  width: 100vw
-  margin-left: 0;
-  font-size: 10px;
-}
 `
 export const Text = styled.h1` 
-margin-left: 2vw
+margin-left: 2vw;
+
+/*
+    centraliza o titulo dispositivo for celular
+*/
+
+@media(max-width: 360px) {
+  margin-left: 35vw
+}
+
 `
 

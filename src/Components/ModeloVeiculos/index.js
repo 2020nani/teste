@@ -1,57 +1,50 @@
-import React, { useState, useEffect } from 'react';
+/*
+    Dados da pagina
+   * Nome : Navita
+   * Objetivo: Buscar modelos de veiculos da marca escolhida
+   * Desenvolvedor: Hernani Almeida
+   * data criacao: 29/11/2020
+   
+*/
 
-//importando funcao do servico para requisitar dados da api
-import { ModelosVeiculos } from '../../Services/api'
+import React, { useState, useEffect } from 'react';
 
 //importando estilos para pagina
 import { Container, HeaderTabela } from './styled'
 
 //component que sera exportado
-export default function ModeloVeiculos( props ) {
-    // declarando variavel contendo id passado pela props
-    let id = props.children[0]
+export default function ModeloVeiculos(props) {
+    // declarando variavel contendo array modelos passado pela props.children em MarcaVeiculos/index.js
+    let viewModelos = props.children[0]
     let modelo = props.children[1]
-    // declarando constantes
-    
 
-     //funcao que faz requisicao na api e retorna um array das marcas dos veiculos 
-  
+    return (
 
-    /* funcoes utilizadas pelo componente 
+        <div>
+            {viewModelos === true ?
+                <Container>
+                    <HeaderTabela>
+                        <h1>Modelos</h1>
+                    </HeaderTabela>
 
-    // funcao que recebe id escolhido e instancia no estado da constante veiculoid
-    function idVeiculo(id) {
+                    <table>
+                        <th><p>Modelo</p></th>
+                        {modelo.map(modelos => (
+                            <tr>
+                                <td>
+                                    <p>{modelos.nome}</p>
 
-        setVeiculoid(id)
-    
-    }*/
-    
-    return (console.log(id, modelo),
-  
-     <div>
-    {id === true ? 
-    <Container>
-    <HeaderTabela>
-        <h1>Modelos</h1>
-    </HeaderTabela>
-    
-    <table>
-        <th><p>Modelo</p></th>
-        {modelo.map(modelos =>(
-            <tr>
-                <td>
-                    <p>{modelos.nome}</p>
-                    
-                </td>
-                
-            </tr>
-        ))}
-        
-    </table>
+                                </td>
 
-    </Container>
-    : <h1>hello</h1>}
-  </div>
-  
+                            </tr>
+                        ))}
+
+                    </table>
+
+                </Container>
+                : 
+                <div></div>}
+        </div>
+
     )
 }

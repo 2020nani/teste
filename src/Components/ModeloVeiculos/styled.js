@@ -14,7 +14,14 @@ table{
     margin-left: 2vw;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    
+
+    /*
+    ajustando tabela para ficar responsavel
+    */
+
+@media(max-width: 360px) {
+    width: 100vw
+}   
 }
 th{
     display:flex;
@@ -22,6 +29,9 @@ th{
     font-size: 1.2rem;
     border-bottom: 1px solid #E3E6F0;
     border-top: 1px solid #E3E6F0;
+p{
+  color:#5A5C69;
+}  
     
 }
 td{
@@ -32,23 +42,10 @@ td{
     border-bottom: 1px solid #E3E6F0;
     p{
       width:10vw;
+      color:#5A5C69
     }
-    button{
-      width:10vw;
-      margin-left:40vw;
-      border: none;
-      background-color:white;
-      color: blue
-      
-    }
-    
-    
-}
-@media(min-width: 700px) {
-  width: 100vw
-  margin-left: 0;
-  font-size: 10px;
-}
+  
+
 `
 
 export const HeaderTabela = styled.div `
@@ -63,4 +60,13 @@ h1{
   color:blue
 }
 
+/*
+    ajustando header da tabela para ficar responsavel e centralizando item
+*/
+
+@media(max-width: 360px) {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
 `

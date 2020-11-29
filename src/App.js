@@ -5,7 +5,7 @@ import MarcaVeiculos  from './Components/MarcaVeiculos';
 
 //importando estilos para pagina
 import { Container, Text } from './styledapp';
-import ModeloVeiculos from './Components/ModeloVeiculos';
+
 
 export default function App() {
   return (

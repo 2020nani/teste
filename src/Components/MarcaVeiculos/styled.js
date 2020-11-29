@@ -1,5 +1,17 @@
+/*
+    Dados da pagina
+   * Nome : Navita
+   * Objetivo: Buscar modelos de veiculos da marca escolhida
+   * Desenvolvedor: Hernani Almeida
+   * data criacao: 29/11/2020
+   
+*/
+/*
+    estilos do componente
+*/
+
 import styled from 'styled-components';
-export const Container = styled.div `
+export const Container = styled.div`
 width:96vw;
 margin-left:2vw;
 margin-bottom:2vh;
@@ -15,7 +27,13 @@ table{
     margin-left: 2vw;
     margin-top: 2vh;
     margin-bottom: 2vh;
-    
+    /*
+     ajustando tabela para ficar responsavel
+    */
+    @media(max-width: 360px) {
+      width: 100vw;
+      
+    }  
     
 }
 th{
@@ -24,6 +42,10 @@ th{
     font-size: 1.2rem;
     border-bottom: 1px solid #E3E6F0;
     border-top: 1px solid #E3E6F0;
+p{
+    color:#5A5C69;
+} 
+ 
     
 }
 td{
@@ -34,14 +56,22 @@ td{
     border-bottom: 1px solid #E3E6F0;
     p{
       width:10vw;
+      color:#5A5C69
     }
     button{
-      width:10vw;
+      width:15vw;
       margin-left:40vw;
       border: none;
       background-color:white;
-      color:blue
-      
+      color: blue;
+
+    /*
+    ajustando botao para ficar responsavel
+    */
+
+    @media(max-width: 360px) {
+      width: 30vw
+     }  
     }
     button:hover{
       color:green
@@ -49,14 +79,10 @@ td{
     
     
 }
-@media(min-width: 700px) {
-  width: 100vw
-  margin-left: 0;
-  font-size: 10px;
-}
+
 `
 
-export const HeaderTabela = styled.div `
+export const HeaderTabela = styled.div`
 width: 96vw;
 display : flex;
 justify-content:flex-start;
@@ -69,5 +95,14 @@ h1{
   color:blue
 }
 
+/*
+  ajustando header da tabela para ficar responsavel e centralizando item
+*/
+
+@media(max-width: 360px) {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
 `
 
