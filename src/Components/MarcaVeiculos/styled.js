@@ -13,7 +13,7 @@
 import styled from 'styled-components';
 export const Container = styled.div`
 width:96vw;
-margin-left:2vw;
+margin-left:1vw;
 margin-bottom:2vh;
 display : flex;
 flex-direction:column;

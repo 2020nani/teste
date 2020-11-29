@@ -6,7 +6,7 @@ background-color: #F7F8FB;
 
 `
 export const Text = styled.h1` 
-margin-left: 2vw;
+padding-left: 2vw;
 
 /*
     centraliza o titulo dispositivo for celular
