@@ -25,11 +25,11 @@ Para iniciar o desenvolvimento e necessario clonar o projeto do Github num diret
 Apos clonar o projeto em seu computador e necessario instalar as dependencias que o projeto utiliza com o seguinte comando:
 
 
-- npm install
+- `npm install`
 
 Rode o programa em seu computador na porta 3000 com o seguinte comando
 
-- `npm install`
+- `npm run start`
 
 ## Rodar testes end-to-end com cypress
 
