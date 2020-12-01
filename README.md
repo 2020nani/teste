@@ -1,6 +1,6 @@
 # Navita
 
-Este projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) version 11.0.1.
+Este projeto foi gerado com o comando create react app
 
 Desenvolvido por Hernani Amancio de Almeida
 
@@ -10,7 +10,7 @@ Desenvolvido por Hernani Amancio de Almeida
 Para executar o projeto, sera necessario instalar os seguintes programas em seu computador:
 
 - Nodejs 
-- angular
+
 
 ## Desenvolvimento
 
@@ -19,7 +19,7 @@ Para iniciar o desenvolvimento e necessario clonar o projeto do Github num diret
 
 - `cd "diretorio de sua preferencia"`
 - `git clone https://github.com/2020nani/testeAngular.git`
-- `cd testeAngular`
+- `cd teste`
 
 
 Apos clonar o projeto em seu computador e necessario instalar as dependencias que o projeto utiliza com o seguinte comando:
