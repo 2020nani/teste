@@ -57,6 +57,7 @@ td{
     p{
       width:10vw;
       color:#5A5C69
+      
     }
     button{
       width:15vw;
@@ -64,6 +65,7 @@ td{
       border: none;
       background-color:white;
       color: blue;
+      
 
     /*
     ajustando botao para ficar responsavel
