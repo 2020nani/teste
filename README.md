@@ -37,4 +37,4 @@ Rode o seguinte comando
 - `npx cypress open`
 
 
-testando
+testando branch checkout
